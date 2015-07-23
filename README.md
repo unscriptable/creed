@@ -30,7 +30,8 @@ define(['creed'], function(creed) { ... });
 ```
 
 ```html
-// Script
+// Browser global
+// window.creed
 <script src="creed/dist/creed.js"></script>
 ```
 
