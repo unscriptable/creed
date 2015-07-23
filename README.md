@@ -14,23 +14,23 @@ Creed is a forward-looking promise toolkit.  It favors intuitiveness, productivi
 
 `bower install --save creed`
 
-### ES2015
 ```js
+// ES2015
 import { resolve, reject, all, ... } from 'creed';
 ```
 
-### Node/CommonJS
 ```js
+// Node/CommonJS
 var creed = require('creed');
 ```
 
-### AMD
 ```js
+// AMD
 define(['creed'], function(creed) { ... });
 ```
 
-### &lt;script&gt;
 ```html
+// Script
 <script src="creed/dist/creed.js"></script>
 ```
 
