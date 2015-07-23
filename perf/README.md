@@ -4,9 +4,7 @@ Latest results, using latest versions of modules:
     ├── bluebird@2.9.34
     ├── co@4.6.0
     ├── rsvp@3.0.18
-    ├── vow@0.4.10
     └── when@3.7.3
-
 
 bench doxbee-sequential
 
