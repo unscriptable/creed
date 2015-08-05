@@ -52,20 +52,20 @@ main(process);
 
 `bower install --save creed`
 
+As a module:
+
 ```js
 // ES2015
 import { resolve, reject, all, ... } from 'creed';
-```
 
-```js
 // Node/CommonJS
 var creed = require('creed');
-```
 
-```js
 // AMD
 define(['creed'], function(creed) { ... });
 ```
+
+As `window.creed`:
 
 ```html
 <!-- Browser global: window.creed -->
@@ -96,25 +96,5 @@ Promise { pending }
 > p
 Promise { fulfilled: done! }
 > race([delay(100, 'no'), 'winner']);
-Promise { fulfilled: winner }
-```
-
-### Node
-
-```
-npm install creed
-node
-> var creed = require('creed');
-undefined
-> creed.resolve('hello');
-Promise { fulfilled: hello }
-> creed.all([1, 2, 3].map(creed.resolve));
-Promise { fulfilled: 1,2,3 }
-> var p = creed.delay(1000, 'done!'); p
-Promise { pending }
-... wait 1 second ...
-> p
-Promise { fulfilled: done! }
-> creed.race([creed.delay(100, 'no'), 'winner']);
 Promise { fulfilled: winner }
 ```
