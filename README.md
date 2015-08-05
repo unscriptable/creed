@@ -20,7 +20,7 @@ Using creed coroutines and FP to solve the [async-problem](https://github.com/pl
 ```js
 'use strict';
 
-import { runNode, all, coroutine } from '../..';
+import { runNode, all, coroutine } from 'creed';
 import { readFile } from 'fs';
 import { join } from 'path';
 
